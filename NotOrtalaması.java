@@ -61,26 +61,26 @@ public class NotOrtalaması extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setText("İsim Soyisim");
+        jLabel1.setText("Name and Surname: ");
 
-        jLabel2.setText("Öğrenci No");
+        jLabel2.setText("Student ID: ");
 
-        jLabel3.setText("Vize Notunuzu Giriniz");
+        jLabel3.setText("Enter your Midterm Grade: ");
         jLabel3.setPreferredSize(new java.awt.Dimension(30, 30));
 
         jTextField3.setPreferredSize(new java.awt.Dimension(30, 30));
 
-        jLabel4.setText("Final Notunuzu Giriniz");
+        jLabel4.setText("Enter your Final Grade: ");
         jLabel4.setPreferredSize(new java.awt.Dimension(30, 30));
 
         jTextField4.setPreferredSize(new java.awt.Dimension(30, 30));
 
-        jLabel5.setText("Proje Notunuzu Giriniz");
+        jLabel5.setText("Enter your Project Grade: ");
         jLabel5.setPreferredSize(new java.awt.Dimension(30, 30));
 
         jTextField5.setPreferredSize(new java.awt.Dimension(30, 30));
 
-        jButton3.setText("Hesapla");
+        jButton3.setText("Calculate");
         jButton3.setPreferredSize(new java.awt.Dimension(30, 30));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,7 +188,7 @@ public class NotOrtalaması extends javax.swing.JFrame {
         Öğrenciler öğrenci = new Öğrenciler(isim, no, 0, 0, 0);
         Array.add(öğrenci);
 
-        jLabel7.setText("Hoşgeldiniz " + isim + " Hesaplama Yapabilirsiniz  ");
+        jLabel7.setText("Welcome " + isim + " You can calculate now  ");
 
 
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -205,11 +205,11 @@ public class NotOrtalaması extends javax.swing.JFrame {
 
         double ortalama = (Double)(vize * 0.4) + (finalnotu * 0.5) + (proje * 0.1);
         if (0 <= ortalama && ortalama < 50) {
-            jLabel8.setText("Başarısız");
+            jLabel8.setText("Unsuccessful");
         } else if (50 <= ortalama && ortalama <= 100) {
-            jLabel8.setText("Başarılı");
+            jLabel8.setText("Successful");
         } else {
-            jLabel8.setText("Lütfen geçerli notlar giriniz");
+            jLabel8.setText("Please enter valid grades");
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
